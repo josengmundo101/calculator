@@ -9,31 +9,34 @@
 <body>
     
     <div class="calculator" id="calculator">
-        <input id="display" class="display" readonly>
+        <div class="screen">
+            <div class="screen-last" id="lastOperationScreen"></div>
+            <div class="screen-current" id="currentOperationScreen">0</div>
+        </div>
 
         <div class="keys" id="keys">
-            <button onclick="clearDisplay()" class="operator-btn">AC</button>
-            <button onclick="deleteDisplay()" class="operator-btn">DE</button>
-            <button onclick="appendToDisplay('/')" class="operator-btn">/</button>
-            <button onclick="appendToDisplay('*')" class="operator-btn">*</button>
+            <button  id="clearBtn" class="operator-btn">AC</button>
+            <button  id="deleteBtn" class="operator-btn">DE</button>
+            <button  id="operatorBtn" class="operator-btn">÷</button>
+            <button  id="operatorBtn" class="operator-btn">×</button>
             
-            <button onclick="appendToDisplay('7')">7</button>
-            <button onclick="appendToDisplay('8')">8</button>
-            <button onclick="appendToDisplay('9')">9</button>
-            <button onclick="appendToDisplay('-')" class="operator-btn">-</button>
+            <button class="normalBtn">7</button>
+            <button class="normalBtn">8</button>
+            <button class="normalBtn">9</button>
+            <button id="operatorBtn" class="operator-btn">-</button>
 
-            <button onclick="appendToDisplay('4')">4</button>
-            <button onclick="appendToDisplay('5')">5</button>
-            <button onclick="appendToDisplay('6')">6</button>
-            <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
+            <button class="normalBtn">4</button>
+            <button class="normalBtn">5</button>
+            <button class="normalBtn">6</button>
+            <button id="operatorBtn" class="operator-btn">+</button>
 
-            <button onclick="appendToDisplay('1')">1</button>
-            <button onclick="appendToDisplay('2')">2</button>
-            <button onclick="appendToDisplay('3')">3</button>
-            <button onclick="calculate()" class="operator-btn">=</button>
+            <button class="normalBtn">1</button>
+            <button class="normalBtn">2</button>
+            <button class="normalBtn">3</button>
+            <button id="equalBtn" class="operator-btn">=</button>
             
-            <button onclick="appendToDisplay('0')">0</button>
-            <button onclick="appendToDisplay('.')">.</button>
+            <button class="normalBtn">0</button>
+            <button class="normalBtn" id="pointBtn">.</button>
       
         </div>
 
